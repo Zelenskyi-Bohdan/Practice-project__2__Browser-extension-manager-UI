@@ -1,0 +1,66 @@
+:root {
+  /* Colors */
+
+  --colors-neutral-0: #fbfdfe;
+  --colors-neutral-100: #eee;
+  --colors-neutral-200: #d6e2f5;
+  --colors-neutral-600: #535868;
+  --colors-neutral-700: #2f364b;
+  --colors-neutral-800: #202535;
+  --colors-neutral-900: #091540;
+  --colors-red-400: #f25c54;
+  --colors-red-500: #de4840;
+  --colors-neutral-300: #c6c6c6;
+  --colors-red-700: #c7231a;
+
+  /* Fonts */
+
+  --font-family: "Noto Sans", sans-serif;
+  --second-family: "Geologica", sans-serif;
+  --third-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", "Geologica", "Inter", sans-serif;
+  color: var(--colors-neutral-600);
+  background-color: #fff;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
