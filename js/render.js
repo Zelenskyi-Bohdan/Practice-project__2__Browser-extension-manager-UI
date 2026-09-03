@@ -3,13 +3,15 @@
 export default function renderMarkup(data) {
     return data
         .map(({ logo, name, description, isActive }) => `
-            <li>
+            <li class="extensions-card">
                 <div class="description-container">
                 <svg width="60" height="60">
                     <use href="${logo}"></use>
                 </svg>
+                <div class="text-container">
                 <h2 class="card-header">${name}</h2>
                 <p class="card-text">${description}</p>
+                </div>
                 </div>
                 <div class="interaction-container">
                 <button class="card-btn" type="button">Remove</button>
