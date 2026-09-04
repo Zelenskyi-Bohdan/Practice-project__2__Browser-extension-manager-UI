@@ -21,15 +21,15 @@ A responsive browser extension manager built with HTML, CSS, and JavaScript.
 
 ## Project Structure
 
-css/
-fav/
-images/
-js/
-├── data.js
-├── render.js
-└── theme.js
-index.html
-main.js
+- css/
+- fav/
+- images/
+- js/
+- ├── data.js
+- ├── render.js
+- └── theme.js
+- index.html
+- main.js
 
 ## Author
 
