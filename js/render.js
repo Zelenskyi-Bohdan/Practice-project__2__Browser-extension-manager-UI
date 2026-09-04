@@ -16,7 +16,7 @@ export default function renderMarkup(data) {
                 <div class="interaction-container">
                 <button class="remove-btn" type="button">Remove</button>
                 <label class="switch">
-                    <input type="checkbox" ${isActive ? 'checked' : ''}>
+                    <input type="checkbox" ${isActive ? 'checked' : ''} aria-label="Activate ${name}">
                     <span class="slider"></span>
                 </label>
                 </div>

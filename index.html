@@ -16,13 +16,13 @@
     <div class="container">
       <header class="header">
         <a class="logo-container" href="./index.html">
-          <svg class="logo" width="179" height="41">
+          <svg class="logo" width="179" height="41" aria-hidden="true">
             <use href="./images/sprite.svg#-logo"></use>
           </svg>
           <p class="logo-text">Extensions</p>
         </a>
-        <button class="theme-btn" type="button">
-          <svg width="21" height="21">
+        <button class="theme-btn" type="button" aria-label="Switch theme">
+          <svg width="21" height="21" aria-hidden="true">
             <use class="theme-icon" href="./images/sprite.svg#-icon-moon"></use>
           </svg>
         </button>
@@ -31,20 +31,39 @@
         <section class="extensions-section">
           <div class="extensions-section-top">
             <h1 class="extensions-header">Extensions List</h1>
-            <div class="extensions-section-btns">
-              <button class="all-btn active" data-filter="all" type="button">
+            <div
+              class="extensions-section-btns"
+              role="group"
+              aria-label="Filter extensions"
+            >
+              <button
+                class="all-btn active"
+                data-filter="all"
+                type="button "
+                aria-label="All cards"
+              >
                 All
               </button>
-              <button class="active-btn" data-filter="active" type="button">
+              <button
+                class="active-btn"
+                data-filter="active"
+                type="button"
+                aria-label="Selected cards"
+              >
                 Active
               </button>
-              <button class="inactive-btn" data-filter="inactive" type="button">
+              <button
+                class="inactive-btn"
+                data-filter="inactive"
+                type="button"
+                aria-label="Unselected Cards"
+              >
                 Inactive
               </button>
             </div>
           </div>
 
-          <ul class="extensions"></ul>
+          <ul class="extensions" aria-label="List of cards"></ul>
         </section>
       </main>
     </div>
