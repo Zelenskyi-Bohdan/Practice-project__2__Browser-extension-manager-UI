@@ -1,14 +1,21 @@
+section {
+  margin-top: 40px;
+}
+
 .extensions-section {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
 }
 
 .extensions-section-top {
   display: flex;
   align-items: center;
-  width: 1170px;
-  height: 46px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  width: 343px;
+  height: 104px;
 }
 
 .extensions-header {
@@ -22,7 +29,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: auto;
   width: 295px;
   height: 46px;
 }
@@ -65,7 +71,6 @@
   gap: 10px;
 
   border: none;
-  border: 1px solid var(--colors-neutral-200);
   border-radius: 999px;
   padding: 8px 20px 10px;
   width: 95px;
@@ -96,7 +101,6 @@
   gap: 10px;
 
   border: none;
-  border: 1px solid var(--colors-neutral-200);
   border-radius: 999px;
   padding: 8px 20px 10px;
   width: 112px;
@@ -128,9 +132,8 @@
 
 .extensions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
-  width: 1170px;
 }
 
 .extensions-card {
@@ -138,11 +141,13 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  gap: 32px;
 
   border: none;
   border-radius: 20px;
   padding: 20px;
-  width: 382px;
+  width: 100%;
+  max-width: 343px;
   height: 200px;
 
   box-shadow: var(--box-shadow);
@@ -152,8 +157,6 @@
 .description-container {
   display: flex;
   gap: 16px;
-  width: 342px;
-  height: 76px;
 }
 
 .text-container {
@@ -162,8 +165,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
-  width: 266px;
-  height: 76px;
 }
 
 .card-header {
@@ -181,10 +182,10 @@
 
 .interaction-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  width: 342px;
-  height: 38px;
+  width: 100%;
 }
 
 .card-btn {
@@ -212,4 +213,56 @@
 .card-btn:focus {
   transform: translateY(-3px);
   box-shadow: var(--btn-shadow-1), var(--btn-shadow-2);
+}
+
+@media (min-width: 768px) {
+  .extensions-section {
+    gap: 32px;
+  }
+
+  .extensions-section-top {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 48px;
+    width: 704px;
+    height: 46px;
+  }
+
+  .extensions-section-btns {
+    margin-left: auto;
+  }
+
+  .extensions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .extensions-card {
+    max-width: 346px;
+    gap: 12px;
+    width: calc((100% - 12px) / 2);
+  }
+}
+
+@media (min-width: 1440px) {
+  section {
+    margin-top: 64px;
+  }
+
+  .extensions-section-top {
+    width: 1170px;
+    height: 46px;
+  }
+
+  .extensions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .extensions-card {
+    max-width: 382px;
+    width: calc((100% - 64px) / 3);
+  }
 }
