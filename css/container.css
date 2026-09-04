@@ -9,5 +9,5 @@
     var(--colors-background-1) 0%,
     var(--colors-background-2) 100%
   );
-  width: auto;
+  width: 100%;
 }
