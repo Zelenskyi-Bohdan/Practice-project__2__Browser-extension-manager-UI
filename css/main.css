@@ -188,7 +188,7 @@ section {
   width: 100%;
 }
 
-.card-btn {
+.remove-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,8 +209,8 @@ section {
   transition: all 0.3s ease;
 }
 
-.card-btn:hover,
-.card-btn:focus {
+.remove-btn:hover,
+.remove-btn:focus {
   transform: translateY(-3px);
   box-shadow: var(--btn-shadow-1), var(--btn-shadow-2);
 }
